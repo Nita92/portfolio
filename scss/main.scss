@@ -1,0 +1,71 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Helvetica;
+}
+
+p {
+    z-index: 99;
+    margin-bottom: 0px;
+}
+// ========= Hero =========
+
+.hero {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 40px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/copper-bg-2.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Yatra One';
+    font-size: 50px;
+    text-align: center;
+    
+    @media (max-width: 575px) {
+        font-size: 35px;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+        opacity: 0.9;
+    }
+
+    
+
+    .construction-icon {
+        z-index: 99;
+        margin-bottom: 30px;
+        width: 250px;
+        height: 250px;
+        background-image: url("../images/icon.png");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @media (max-width: 575px) {
+            width: 150px;
+            height: 150px;
+        }
+    }
+}
+
+
+// ========= Section Footer =========
+
+.footer {
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
